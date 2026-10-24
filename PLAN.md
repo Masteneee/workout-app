@@ -9,7 +9,7 @@ How to start a session: "Read CLAUDE.md and PLAN.md. Do the next unchecked task 
 
 ## Phase 0: Setup
 
-- [ ] **0.1 Project skeleton.** Create index.html, style.css, app.js, logic.js,
+- [x] **0.1 Project skeleton.** Create index.html, style.css, app.js, logic.js,
   storage.js, data/splits.js, tests.js and LEARNING.md. The page has three empty
   tabs: Routines, Log, Learn. tests.js runs one trivial test.
 

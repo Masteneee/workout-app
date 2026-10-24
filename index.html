@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Workout App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Workout App</h1>
+  </header>
+
+  <!-- data-tab on each button matches the id of the section it opens -->
+  <nav class="tabs" role="tablist">
+    <button class="tab" role="tab" data-tab="routines" aria-selected="true">Routines</button>
+    <button class="tab" role="tab" data-tab="log" aria-selected="false">Log</button>
+    <button class="tab" role="tab" data-tab="learn" aria-selected="false">Learn</button>
+  </nav>
+
+  <main>
+    <section id="routines" class="panel" role="tabpanel">
+      <h2>Routines</h2>
+      <p class="empty">Your routines will show up here.</p>
+    </section>
+
+    <section id="log" class="panel" role="tabpanel" hidden>
+      <h2>Log</h2>
+      <p class="empty">Your logged workouts will show up here.</p>
+    </section>
+
+    <section id="learn" class="panel" role="tabpanel" hidden>
+      <h2>Learn</h2>
+      <p class="empty">Short, friendly guides are on the way.</p>
+    </section>
+  </main>
+
+  <!-- Plain scripts (not modules) so the page works when opened as a file.
+       Order matters: app.js uses things defined in the files before it. -->
+  <script src="data/splits.js"></script>
+  <script src="logic.js"></script>
+  <script src="storage.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
